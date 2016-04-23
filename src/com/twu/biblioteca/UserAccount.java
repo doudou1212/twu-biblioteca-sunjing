@@ -11,16 +11,17 @@ public class UserAccount {
     private Map<String, String> users = new HashMap<String, String>();//libraryNumber, password
 
     public UserAccount() {
-        users.put("sunjing", "123456");
-        users.put("zhoujing", "123456");
-        users.put("liujing", "123456");
-        users.put("mengru", "123456");
+        users.put("doudou", "123456");
+        users.put("sj", "123456");
+        users.put("lj", "123456");
+        users.put("mr", "123456");
     }
 
     public boolean login(String libraryNumber, String password) {
         if (this.users.get(libraryNumber).equals(password)){
             return  true;
         }
+        System.out.println("wrong password");
         return false;
     }
 }

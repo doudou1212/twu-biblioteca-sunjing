@@ -17,7 +17,7 @@ public class MovieList {
     }
 
 
-    public void listBooks() {
+    public void listMovies() {
         for (int i=0; i<this.movieList.size(); i++ ){
             if(this.movieList.get(i).ischeckout() == false) {
                 System.out.println("No: "+i+
