@@ -18,6 +18,9 @@ public class UserAccount {
     }
 
     public boolean login(String libraryNumber, String password) {
+        if(!this.users.containsKey(libraryNumber)) {
+            return false;
+        }
         if (this.users.get(libraryNumber).equals(password)){
             return  true;
         }
