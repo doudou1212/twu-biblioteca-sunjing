@@ -41,7 +41,7 @@ public class Movie {
         this.director = director;
     }
 
-    public String getRatint() {
+    public String getRating() {
         return rating;
     }
 

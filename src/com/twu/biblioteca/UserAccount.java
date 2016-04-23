@@ -8,7 +8,7 @@ import java.util.Map;
  * Created by sunjing on 4/23/16.
  */
 public class UserAccount {
-    private Map<String, String> users = new HashMap<String, String>();//Username, password
+    private Map<String, String> users = new HashMap<String, String>();//libraryNumber, password
 
     public UserAccount() {
         users.put("sunjing", "123456");
@@ -17,8 +17,8 @@ public class UserAccount {
         users.put("mengru", "123456");
     }
 
-    public boolean login(String username, String password) {
-        if (this.users.get(username).equals(password)){
+    public boolean login(String libraryNumber, String password) {
+        if (this.users.get(libraryNumber).equals(password)){
             return  true;
         }
         return false;
