@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestBook {
     @Test
-    public void Test() {
+    public void test() {
         Book book = new Book("doudou", "2016-04");
         assertEquals("doudou", book.getName());
         assertEquals("2016-04", book.getYear_published());
